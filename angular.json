@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "atomkit"
+    }
+  },
+  "defaultProject": "atomkit",
+  "cli": {
+    "analytics": "3d3c869a-8ddb-4bec-9158-c1e504ca2ce6"
+  }
 }
