@@ -9,55 +9,16 @@ import { StatesService } from '../../services/states.service';
 export class MenuComponent implements OnInit {
   constructor(private statesService: StatesService) {}
 
-  options = [
-    {
-      title: 'africa',
-    },
-    {
-      title: 'asia',
-    },
-    {
-      title: 'europe',
-    },
-    {
-      title: 'north america',
-    },
-  ];
+  options = ['africa', 'asia', 'europe', 'north america'];
 
   currentOptionIndex = 0;
 
   ngOnInit(): void {
     this.statesService.switchToExperience.subscribe((data) => {
       if (data === 'continents') {
-        this.options = [
-          {
-            title: 'africa',
-          },
-          {
-            title: 'asia',
-          },
-          {
-            title: 'europe',
-          },
-          {
-            title: 'north america',
-          },
-        ];
+        this.options = ['africa', 'asia', 'europe', 'north america'];
       } else {
-        this.options = [
-          {
-            title: 'amsterdam',
-          },
-          {
-            title: 'belgrade',
-          },
-          {
-            title: 'tokyo',
-          },
-          {
-            title: 'stockholm',
-          },
-        ];
+        this.options = ['amsterdam', 'belgrade', 'tokyo', 'stockholm'];
       }
     });
   }

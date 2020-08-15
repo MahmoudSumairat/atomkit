@@ -11,11 +11,6 @@ export class StatesService {
   private experienceState: 'cities' | 'continents' = 'continents';
   private currentOptionIndex: number = 0;
 
-  updateExperienceState = (state: 'cities' | 'continents') => {
-    this.switchToExperience.next(state);
-    this.experienceState = state;
-  };
-
   set expState(state: 'cities' | 'continents') {
     console.log('state : ', state);
     this.experienceState = state;
