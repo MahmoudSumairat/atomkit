@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="__container header__container">
+    <div routerLink="/" class="header__logo">
+      <span>
+        LOGO
+      </span>
+    </div>
+    <ul class="header__nav">
+      <li class="header__nav__item" *ngFor="let route of routes">
+        <a [routerLink]="route.link">
+          {{ route.title }}
+        </a>
+      </li>
+      <li>
+        <img src="../../../assets/icons/search.svg" />
+      </li>
+    </ul>
+    <div class="header__user">
+      <img
+        class="header__user__img"
+        src="../../../assets/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg"
+      />
+      <button class="header__user__button">
+        post your story
+      </button>
+    </div>
+  </div>
+</div>

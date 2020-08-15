@@ -1,0 +1,17 @@
+.__container {
+  width: 90%;
+  margin: auto;
+}
+
+.view {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > h1 {
+    font-style: 4rem;
+    text-transform: uppercase;
+    color: white;
+  }
+}

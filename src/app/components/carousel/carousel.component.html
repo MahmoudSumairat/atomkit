@@ -1,0 +1,17 @@
+<div class="carousel">
+  <div class="carousel__items">
+    <div
+      class="carousel__items__item"
+      *ngFor="let item of slideItems.slice(firstOfSlide, lastOfSlide)"
+    >
+      <app-item [title]="item.title"></app-item>
+    </div>
+  </div>
+  <div class="carousel__indicators">
+    <span
+      (click)="updateCurrentSlideIndex(i)"
+      *ngFor="let ind of slides; let i = index"
+      [ngClass]="{ active: i === currentSlideIndex }"
+    ></span>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<ul class="menu">
+  <li
+    class="menu__item"
+    [ngClass]="{ active: i === currentOptionIndex }"
+    *ngFor="let option of options; let i = index"
+    (click)="updateCurrentOptionIndex(i)"
+  >
+    {{ option.title }}
+  </li>
+</ul>
