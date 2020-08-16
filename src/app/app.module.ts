@@ -1,5 +1,5 @@
-import { AboutUsComponent } from './views/about-us/about-us.component';
-import { HomeComponent } from './views/home/home.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { HomeComponent } from './pages/home/home.component';
 import { ItemComponent } from './components/carousel/item/item.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -10,11 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { OurMagazineComponent } from './views/our-magazine/our-magazine.component';
-import { MultimediaComponent } from './views/multimedia/multimedia.component';
-import { CommunityComponent } from './views/community/community.component';
-import { ServicesComponent } from './views/services/services.component';
-import { ContactUsComponent } from './views/contact-us/contact-us.component';
+import { OurMagazineComponent } from './pages/our-magazine/our-magazine.component';
+import { MultimediaComponent } from './pages/multimedia/multimedia.component';
+import { CommunityComponent } from './pages/community/community.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [

@@ -20,7 +20,6 @@ export class CarouselComponent implements OnInit {
   postsBySlide: number = 3;
   staticIndicator: number = 0;
 
-  slides = [1, 1, 1];
   slideItems: any[] = [];
 
   ngOnInit(): void {

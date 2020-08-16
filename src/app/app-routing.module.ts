@@ -1,12 +1,12 @@
-import { ServicesComponent } from './views/services/services.component';
-import { OurMagazineComponent } from './views/our-magazine/our-magazine.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { OurMagazineComponent } from './pages/our-magazine/our-magazine.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutUsComponent } from './views/about-us/about-us.component';
-import { HomeComponent } from './views/home/home.component';
-import { MultimediaComponent } from './views/multimedia/multimedia.component';
-import { CommunityComponent } from './views/community/community.component';
-import { ContactUsComponent } from './views/contact-us/contact-us.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MultimediaComponent } from './pages/multimedia/multimedia.component';
+import { CommunityComponent } from './pages/community/community.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

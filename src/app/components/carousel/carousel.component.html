@@ -10,7 +10,10 @@
   <div class="carousel__indicators">
     <span
       (click)="updateCurrentSlideIndex(i)"
-      *ngFor="let ind of slides; let i = index"
+      *ngFor="
+        let ind of slideItems.slice(staticIndicator, postsBySlide);
+        let i = index
+      "
       [ngClass]="{ active: i === currentSlideIndex }"
     ></span>
   </div>
